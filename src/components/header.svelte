@@ -42,7 +42,7 @@
 
 		<div class="hidden w-auto md:block">
 			<ul class="flex space-x-3">
-				<li><Button variant="ghost"><a href="/" class="text-lg font-semibold">Home</a></Button></li>
+				<li><Button variant="link"><a href="/" class="text-foreground decoration-accent text-lg font-semibold">Home</a></Button></li>
 				<li>
 					<Button on:click={toggleMode} variant="ghost" size="icon">
 						<Sun
@@ -59,7 +59,7 @@
 
 		<div class={`md:hidden ${open ? 'block' : 'hidden'} mt-2 w-full`}>
 			<ul class="flex flex-col space-y-2">
-				<li><Button variant="ghost"><a href="/" class="text-lg font-semibold">Home</a></Button></li>
+				<li><Button variant="link"><a href="/" class="text-foreground decoration-accent text-lg font-semibold">Home</a></Button></li>
 			</ul>
 		</div>
 	</div>
