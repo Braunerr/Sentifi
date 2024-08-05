@@ -7,7 +7,7 @@
 	import Menu from 'lucide-svelte/icons/menu';
 </script>
 
-<nav class="m-auto border-b-2 py-4 shadow-lg">
+<nav class="m-auto border-b-2 border-foreground py-4 shadow-lg">
 	<div class="container flex flex-wrap items-center justify-between px-2 md:px-16">
 		<a href="/">
 			<div class="flex items-center">
@@ -42,7 +42,12 @@
 
 		<div class="hidden w-auto md:block">
 			<ul class="flex space-x-3">
-				<li><Button variant="link"><a href="/" class="text-foreground decoration-accent text-lg font-semibold">Home</a></Button></li>
+				<li>
+					<Button variant="link"
+						><a href="/" class="text-lg font-semibold text-foreground decoration-accent">Home</a
+						></Button
+					>
+				</li>
 				<li>
 					<Button on:click={toggleMode} variant="ghost" size="icon">
 						<Sun
@@ -59,7 +64,12 @@
 
 		<div class={`md:hidden ${open ? 'block' : 'hidden'} mt-2 w-full`}>
 			<ul class="flex flex-col space-y-2">
-				<li><Button variant="link"><a href="/" class="text-foreground decoration-accent text-lg font-semibold">Home</a></Button></li>
+				<li>
+					<Button variant="link"
+						><a href="/" class="text-lg font-semibold text-foreground decoration-accent">Home</a
+						></Button
+					>
+				</li>
 			</ul>
 		</div>
 	</div>
