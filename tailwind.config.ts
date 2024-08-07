@@ -15,6 +15,8 @@ const config: Config = {
 		},
 		extend: {
 			colors: {
+				grad: '#86132a',
+				gradinverse: '#ec7990',
 				border: 'hsl(var(--border) / <alpha-value>)',
 				input: 'hsl(var(--input) / <alpha-value>)',
 				ring: 'hsl(var(--ring) / <alpha-value>)',

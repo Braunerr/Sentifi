@@ -7,12 +7,12 @@
 	import Menu from 'lucide-svelte/icons/menu';
 </script>
 
-<nav class="m-auto border-b-2 border-foreground py-4 shadow-lg">
+<nav class="m-auto border-b-2 border-foreground py-2 shadow-lg">
 	<div class="container flex flex-wrap items-center justify-between px-2 md:px-16">
 		<a href="/">
 			<div class="flex items-center">
 				<img src="../android-chrome-192x192.png" alt="Logo" class="size-10 md:size-16" />
-				<h1 class="ml-3 text-2xl font-semibold md:text-3xl">Sentifi</h1>
+				<h1 class="bg-gradient-to-r from-grad to-gradinverse font-heading ml-3 text-3xl font-bold text-transparent bg-clip-text md:text-4xl">Sentifi</h1>
 			</div>
 		</a>
 		<div class="block md:hidden">
@@ -25,6 +25,7 @@
 				class={`transform transition-transform ${open ? 'rotate-90' : ''}`}
 			>
 				<Menu />
+				<span class="sr-only">Toggle Nav Menu</span>
 			</Button>
 
 			<div class={`md:hidden ${open ? 'block' : 'hidden'} mt-2 w-full`} id="mobile-nav"></div>
@@ -36,7 +37,7 @@
 				<Moon
 					class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
 				/>
-				<span class="sr-only">Toggle theme</span>
+				<span class="sr-only">Toggle Theme</span>
 			</Button>
 		</div>
 
@@ -44,7 +45,7 @@
 			<ul class="flex space-x-3">
 				<li>
 					<Button variant="link"
-						><a href="/" class="text-lg font-semibold text-foreground decoration-accent">Home</a
+						><a href="/" class="font-heading text-xl font-semibold text-foreground decoration-accent">Home</a
 						></Button
 					>
 				</li>
@@ -66,7 +67,7 @@
 			<ul class="flex flex-col space-y-2">
 				<li>
 					<Button variant="link"
-						><a href="/" class="text-lg font-semibold text-foreground decoration-accent">Home</a
+						><a href="/" class="font-heading text-xl font-semibold text-foreground decoration-accent">Home</a
 						></Button
 					>
 				</li>
