@@ -12,7 +12,11 @@
 		<a href="/">
 			<div class="flex items-center">
 				<img src="../android-chrome-192x192.png" alt="Logo" class="size-10 md:size-16" />
-				<h1 class="bg-gradient-to-r from-grad to-gradinverse font-heading ml-3 text-3xl font-bold text-transparent bg-clip-text md:text-4xl">Sentifi</h1>
+				<h1
+					class="ml-3 bg-gradient-to-r from-grad to-gradinverse bg-clip-text font-heading text-3xl font-bold text-transparent md:text-4xl"
+				>
+					Sentifi
+				</h1>
 			</div>
 		</a>
 		<div class="block md:hidden">
@@ -45,7 +49,9 @@
 			<ul class="flex space-x-3">
 				<li>
 					<Button variant="link"
-						><a href="/" class="font-heading text-xl font-semibold text-foreground decoration-accent">Home</a
+						><a
+							href="/"
+							class="font-heading text-xl font-semibold text-foreground decoration-accent">Home</a
 						></Button
 					>
 				</li>
@@ -67,7 +73,9 @@
 			<ul class="flex flex-col space-y-2">
 				<li>
 					<Button variant="link"
-						><a href="/" class="font-heading text-xl font-semibold text-foreground decoration-accent">Home</a
+						><a
+							href="/"
+							class="font-heading text-xl font-semibold text-foreground decoration-accent">Home</a
 						></Button
 					>
 				</li>
